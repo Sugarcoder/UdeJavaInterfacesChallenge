@@ -55,7 +55,7 @@ public class Main {
                     break;
                 }
         }
-    return readValues();
+        return readValues();
     }
 
 
@@ -73,11 +73,6 @@ public class Main {
         objectToLoad.read(values);
 
     }
-
-
-
-
-
 
 
 

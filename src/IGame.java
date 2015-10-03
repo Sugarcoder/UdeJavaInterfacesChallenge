@@ -7,5 +7,5 @@ public interface IGame {
 
     void read(List<String> savedValues);
 
-    
+
 }
