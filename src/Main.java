@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -14,11 +15,15 @@ public class Main {
         amy.setWeapons("Mace");
         System.out.println(amy);
         savedObject(amy);
-        loadObject(amy);
+        // loadObject(amy);
         System.out.println(amy);
 
-    }
 
+        Monsters werewolf = new Monsters("Werewolf", 20, 40);
+        System.out.println("Strength = " + werewolf.getStrength());
+        savedObject(werewolf);
+
+    }
 
 
 
@@ -37,12 +42,12 @@ public class Main {
                 "0 to quit");
 
 
-        while(!quit) {
+        while (!quit) {
             System.out.println("Choose an option:");
 
             int choice = scanner.nextInt();
 
-            switch(choice) {
+            switch (choice) {
                 case 0:
                     quit = true;
                     break;
@@ -53,10 +58,12 @@ public class Main {
                     values.add(index, stringInput);
                     index++;
                     break;
-                }
+            }
         }
-        return readValues();
+
+        return values;
     }
+
 
 
 
